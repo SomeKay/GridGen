@@ -1,0 +1,95 @@
+/* Clearfix */
+.clearfix:after {
+	clear: both;
+	content: ' ';
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}
+
+/* Margine */
+div.margin_bottom {
+    margin-bottom: 20px;
+}
+div.margin_left {
+    margin-left: 20px;
+}
+div.margin_right {
+    margin-right: 20px;
+}
+div.margin_top {
+    margin-top: 20px;
+}
+
+/* Horizontalni element */
+div.hor {
+    position: relative;
+}
+
+/* Stil za generator */
+div.hor {
+    min-height: 30px;
+    padding: 10px 0;
+}
+    div.col_1,
+    div.col_2,
+    div.col_3,
+    div.col_4,
+    div.col_5,
+    div.col_6,
+    div.col_7,
+    div.col_8,
+    div.col_9,
+    div.col_10,
+    div.col_11,
+    div.col_12,
+    div.col_13,
+    div.col_14,
+    div.col_15,
+    div.col_16 {
+        border-top: solid 1px #000;
+        border-bottom: solid 2px #000;
+        float: left;
+        min-height: 30px;
+        padding: 20px 0 0 0;
+        position: relative;
+    }
+        div.col_1,
+        div.col_5,
+        div.col_9,
+        div.col_13 {
+            background-color: #b8d0de;
+        }
+        div.col_2,
+        div.col_6,
+        div.col_10,
+        div.col_14 {
+            background-color: #f8ca00;
+        }
+        div.col_3,
+        div.col_7,
+        div.col_11,
+        div.col_15 {
+            background-color: #ff873d;
+        }
+        div.col_4,
+        div.col_8,
+        div.col_12,
+        div.col_16 {
+            background-color: #cff09e;
+        }        

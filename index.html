@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>GRen</title>
+
+        <!-- Meta Tags -->
+        <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
+        <meta name="robots" content="index, follow" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="Kristian Poslek" />
+
+        <link rel="shortcut icon" href="" />
+
+        <link rel="stylesheet" href="css/base.css" media="screen,projection" type="text/css" />
+        <link rel="stylesheet" href="css/custom-theme/jquery-ui-1.8.custom.css" media="screen,projection" type="text/css" />
+        <link rel="stylesheet" href="css/grid.css" media="screen,projection" type="text/css" />
+        <link rel="stylesheet" href="css/style.css" media="screen,projection" type="text/css" />
+        <style type="text/css" title="params"></style>
+    </head>
+    <body>
+        <div id="container">
+            <ul id="tabs">
+                <li><a href="#tabs_1" title="Oblikovanje">Oblikovanje</a></li>
+                <li><a href="#tabs_2" title="Programski kod">Programski kod</a></li>
+                <li><a href="#tabs_3" title="Brzi pregled">Brzi pregled</a></li>
+            </ul>
+            <div id="content">
+                <div id="tabs_1" class="clearfix">
+                    <div id="elements_container"></div> <!-- Prostor za punjenje elementima -->
+                </div>
+                <div id="tabs_2">
+                    <p>CSS</p>
+                    <textarea id="css"></textarea>
+                    <p>HTML</p>
+                    <textarea id="html"></textarea>
+                </div>
+                <div id="tabs_3">
+                    
+                </div>
+            </div>
+        </div><!-- container -->
+        <div id="elements" title="Elementi">
+            <ul></ul> <!-- Elementi -->
+        </div>
+        <div id="options" title="Postavke">
+            <p>
+                <label for="column_selector">Broj stupaca</label>
+                <select name="column_selector" id="column_selector">
+                    <option value="4">4 stupca</option>
+                    <option value="8">8 stupaca</option>
+                    <option value="12">12 stupaca</option>
+                    <option value="16">16 stupaca</option>
+                </select>
+            </p>
+            <p>
+                <label for="container_width">Širina prostora </label>
+                <input name="container_width" id="container_width" value="960" /> px
+                <a href="#" class="container_width" title="Spremi">Spremi</a>
+            </p>
+            <p>
+                <label for="column_width">Širina stupca </label>
+                <input name="column_width" id="column_width" value="220" /> px
+                <a href="#" class="column_width" title="Spremi">Spremi</a>
+            </p>
+            <p>
+                <label for="container_padding">Odmak od ruba prostora </label>
+                <input name="container_padding" id="container_padding" value="10" /> px
+                <a href="#" class="container_padding" title="Spremi">Spremi</a>
+            </p>
+            <p>
+                <label for="margin_width">Širina razmaka među stupcima </label>
+                <input name="margin_width" id="margin_width" value="20" /> px
+                <a href="#" class="margin_width" title="Spremi">Spremi</a>
+            </p>
+        </div><!-- options -->
+        <div id="modal">
+            <p>
+                <label for="element_columns">Broj stupaca</label>
+                <select name="element_columns" id="element_columns">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </p>
+            <p>
+                <a href="#" title="Gornja margina" id="element_margin_top">Gornja margina</a>
+            </p>
+            <p>
+                <a href="#" title="Doljnja margina" id="element_margin_bottom">Doljnja margina</a>
+            </p>
+            <p>
+                <a href="#" title="Desna margina" id="element_margin_right">Desna margina</a>
+            </p>
+            <p>
+                <a href="#" title="Lijeva margina" id="element_margin_left">Lijeva margina</a>
+            </p>
+        </div>
+        <script src="js/jquery-1.4.2.js" type="text/javascript"></script>
+        <script src="js/jquery-ui-1.8rc3.custom.min.js" type="text/javascript"></script>
+        <script src="js/scripts.js" type="text/javascript"></script>
+    </body>
+</html>

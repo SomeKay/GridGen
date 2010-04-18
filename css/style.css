@@ -1,0 +1,163 @@
+/* Library */
+div.drophover {
+    background: #fff url(../images/back-hover.png) repeat 0 0 !important;
+}
+
+html {
+    background: #e8f7ff url(../images/background.png) repeat-x 0 0;
+    overflow: scroll;
+}
+body {}
+
+/* Layout */
+div#container {
+    margin: 0 auto;
+    width: 980px;
+}
+    div#content {
+        box-shadow: 0px 0px 15px #597487;
+        -moz-box-shadow: 0px 0px 15px #597487;
+        -webkit-box-shadow: 0px 0px 15px #597487;
+    }
+    div#content div#tabs_1.ui-tabs-panel {
+        padding-left: 5px;
+        padding-right: 0;
+    }
+    div#content div#tabs_1,
+    div#content div#tabs_2,
+    div#content div#tabs_3 {
+        background-color: #fff;
+        padding: 10px;
+        width: 960px;
+    }
+        textarea#css {
+            height: 400px;
+            font-family: Consolas, Courier New, Monaco, monospace;
+            font-size: 12px;
+            width: 600px;
+        }
+        textarea#html {
+            height: 400px;
+            width: 600px;
+        }
+    div#elements_container {
+        background-color: #fff;
+        border: dashed 1px #ddd;
+
+        float: left;
+        min-height: 100px;
+        padding: 10px 9px;
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        width: 940px;
+    }
+        div.hor {
+            background-color: #eee;
+            border-top: dotted 1px #ccc;
+            border-bottom: dotted 1px #ccc;
+            cursor: pointer;
+            min-height: 50px;
+            padding: 10px 0;
+        }
+        a.edit_element,
+        a.delete_element {
+            border: solid 1px #000;
+            display: block;
+            height: 16px;
+            padding: 1px;
+            position: absolute;
+            text-decoration: none;
+            text-indent: -10000px;
+            width: 16px;
+        }
+        a.edit_element {
+            background: #fff url(../images/icons/wrench.png) no-repeat 1px 1px;
+            left: 0;
+            top: 0;
+        }
+        a.delete_element {
+            background: #fff url(../images/icons/delete.png) no-repeat 1px 1px;
+            top: 0;
+            right: 0;
+        }
+    div#options {
+        padding: 10px;
+    }
+        div#options label {
+            display: block;
+        }
+    div#elements {
+        padding-top: 20px;
+    }
+        div#elements ul {
+        }
+            div#elements ul li {
+                border: solid 1px #777;
+                color: #000;
+                cursor: pointer;
+                height: 40px;
+                margin-bottom: 10px;
+                padding: 4px;
+                position: relative;
+                width: 162px;
+                -moz-border-radius: 4px;
+                -webkit-border-radius: 4px;
+                border-radius: 4px;
+            }
+                li.col_1,
+                li.col_5,
+                li.col_9,
+                li.col_13 {
+                    background-color: #b8d0de;
+                }
+                li.col_2,
+                li.col_6,
+                li.col_10,
+                li.col_14 {
+                    background-color: #f8ca00;
+                }
+                li.col_3,
+                li.col_7,
+                li.col_11,
+                li.col_15 {
+                    background-color: #ff873d;
+                }
+                li.col_4,
+                li.col_8,
+                li.col_12,
+                li.col_16 {
+                    background-color: #cff09e;
+                } 
+                div#elements ul li:hover {
+                    font-weight: bold;
+                }
+                div#elements ul li div {
+                    background-color: #fff;
+                    border: solid 1px #666;
+                    height: 20px;
+                    width: 160px;
+                }
+                    div#elements ul li div span {
+                        background: #fff url(../images/back-bar-blue.png) repeat-x 0 0;
+                        display: block;
+                        height: 20px;
+                    }
+    div#modal {
+    }
+        div#modal a {
+            background: transparent url(../images/icons/bullet_red.png) no-repeat left center;
+            color: #777;
+            line-height: 21px;
+            padding: 0 0 0 20px;
+            text-decoration: none;
+        }
+        div#modal a.active {
+            background: transparent url(../images/icons/bullet_green.png) no-repeat 0 0;
+            color: #000;
+        }
+div.ui-dialog {
+    overflow: visible;
+    box-shadow: 0px 0px 10px #666;
+    -moz-box-shadow: 0px 0px 10px #666;
+    -webkit-box-shadow: 0px 0px 10px #666;
+}
