@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <title>GRen</title>
+        <title>GridGen</title>
 
         <!-- Meta Tags -->
         <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
@@ -20,6 +20,7 @@
     </head>
     <body>
         <div id="container">
+            <h1>GridGen - HTML Grid Generator</h1>
             <ul id="tabs">
                 <li><a href="#tabs_1" title="Oblikovanje">Oblikovanje</a></li>
                 <li><a href="#tabs_2" title="Programski kod">Programski kod</a></li>
@@ -36,7 +37,7 @@
                     <textarea id="html"></textarea>
                 </div>
                 <div id="tabs_3">
-                    
+                    <div id="preview"></div>
                 </div>
             </div>
         </div><!-- container -->
@@ -44,37 +45,38 @@
             <ul></ul> <!-- Elementi -->
         </div>
         <div id="options" title="Postavke">
-            <p>
+            <h2>Postavke</h2>
+            <p class="column_selector">
                 <label for="column_selector">Broj stupaca</label>
                 <select name="column_selector" id="column_selector">
-                    <option value="4">4 stupca</option>
-                    <option value="8">8 stupaca</option>
-                    <option value="12">12 stupaca</option>
-                    <option value="16">16 stupaca</option>
+                    <option value="4">četiri</option>
+                    <option value="8">osam</option>
+                    <option value="12">dvanaest</option>
+                    <option value="16">šesnaest</option>
                 </select>
             </p>
-            <p>
-                <label for="container_width">Širina prostora </label>
-                <input name="container_width" id="container_width" value="960" /> px
-                <a href="#" class="container_width" title="Spremi">Spremi</a>
+            <p class="container_width">
+                <label for="container_width">Širina prostora</label>
+                <input name="container_width" id="container_width" value="960" />px
+                <a href="#" class="container_width" title="Spremi">OK</a>
             </p>
-            <p>
-                <label for="column_width">Širina stupca </label>
-                <input name="column_width" id="column_width" value="220" /> px
-                <a href="#" class="column_width" title="Spremi">Spremi</a>
+            <p class="column_width">
+                <label for="column_width">Širina stupca</label>
+                <input name="column_width" id="column_width" value="220" />px
+                <a href="#" class="column_width" title="Spremi">OK</a>
             </p>
-            <p>
-                <label for="container_padding">Odmak od ruba prostora </label>
-                <input name="container_padding" id="container_padding" value="10" /> px
-                <a href="#" class="container_padding" title="Spremi">Spremi</a>
+            <p class="container_padding">
+                <label for="container_padding">Odmak od ruba</label>
+                <input name="container_padding" id="container_padding" value="10" />px
+                <a href="#" class="container_padding" title="Spremi">OK</a>
             </p>
-            <p>
-                <label for="margin_width">Širina razmaka među stupcima </label>
-                <input name="margin_width" id="margin_width" value="20" /> px
-                <a href="#" class="margin_width" title="Spremi">Spremi</a>
+            <p class="margin_width">
+                <label for="margin_width">Margina</label>
+                <input name="margin_width" id="margin_width" value="20" />px
+                <a href="#" class="margin_width" title="Spremi">OK</a>
             </p>
         </div><!-- options -->
-        <div id="modal">
+        <div id="modal" title="Postavke elementa">
             <p>
                 <label for="element_columns">Broj stupaca</label>
                 <select name="element_columns" id="element_columns">

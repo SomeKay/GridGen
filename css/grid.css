@@ -75,21 +75,45 @@ div.hor {
         div.col_13 {
             background-color: #b8d0de;
         }
+            div#col_1 div.ui-progressbar-value,
+            div#col_5 div.ui-progressbar-value,
+            div#col_9 div.ui-progressbar-value,
+            div#col_13 div.ui-progressbar-value {
+                background: #779db4 none;
+            }
         div.col_2,
         div.col_6,
         div.col_10,
         div.col_14 {
             background-color: #f8ca00;
         }
+            div#col_2 div.ui-progressbar-value,
+            div#col_6 div.ui-progressbar-value,
+            div#col_10 div.ui-progressbar-value,
+            div#col_14 div.ui-progressbar-value {
+                background: #f8a900 none;
+            }
         div.col_3,
         div.col_7,
         div.col_11,
         div.col_15 {
             background-color: #ff873d;
         }
+            div#col_3 div.ui-progressbar-value,
+            div#col_7 div.ui-progressbar-value,
+            div#col_11 div.ui-progressbar-value,
+            div#col_15 div.ui-progressbar-value {
+                background: #c76528 none;
+            }
         div.col_4,
         div.col_8,
         div.col_12,
         div.col_16 {
             background-color: #cff09e;
-        }        
+        }    
+            div#col_4 div.ui-progressbar-value,
+            div#col_8 div.ui-progressbar-value,
+            div#col_12 div.ui-progressbar-value,
+            div#col_16 div.ui-progressbar-value {
+                background: #7faa3e none;
+            }    

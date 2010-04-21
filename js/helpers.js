@@ -261,3 +261,30 @@ function generateCSS() {
 
     return css.replace(/\\n/g, '');
 }
+
+function generateHTML() {
+    var generated_html = $('div#elements_container').html();
+    var $html = $(generated_html).wrapAll('<div class="root"></div>').parent();
+    console.log($html.html());
+    $html.find('a').remove();
+    $html.find('div').removeClass('ui-droppable ui-draggable ui-sortable');
+
+
+    
+
+    /*generated_html = generated_html.replace(/ui-droppable/g, '');
+    generated_html = generated_html.replace(/ui-sortable/g, '');
+    generated_html = generated_html.replace(/<div/g, '\n<div');
+    generated_html = generated_html.replace(/<a href="#" class="edit_element">Uredi<\/a>/g, '');
+    generated_html = generated_html.replace(/<a href="#" class="delete_element">Izbriši<\/a></div>/g, '');*/
+
+    var html_output = $html.html();
+    html_output = html_output.replace(/<div/g, '\n<div');
+    $('textarea#html').text(html_output);
+
+    $('div#preview').html(html_output);
+}
+
+function generatePreview() {
+
+}

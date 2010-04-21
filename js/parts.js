@@ -28,17 +28,13 @@ function initialize() {
 function enableDialogs() {
     $('div#elements').dialog({
         height: 340,
-        position: ['right', 10],
+        position: [178, 190],
         resizable: false,
         width: 215
     });
-    $('div#options').dialog({
-        position: ['left', 10],
-        resizable: false
-    });
     $('div#modal').dialog({
         autoOpen: false,
-        modal: true,
+        modal: true
     });
 }
 

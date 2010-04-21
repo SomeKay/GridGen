@@ -4,20 +4,60 @@ div.drophover {
 }
 
 html {
-    background: #e8f7ff url(../images/background.png) repeat-x 0 0;
-    overflow: scroll;
+    background: #c5b68c url(../images/background.png) repeat-x 0 0;
+    overflow-y: scroll;
 }
 body {}
 
 /* Layout */
+h1 {
+    background: transparent url(../images/logo.png) no-repeat 0 0;
+    height: 122px;
+    left: 20px;
+    position: absolute;
+    text-indent: -10000px;
+    top: 35px;
+    width: 267px;
+}
 div#container {
     margin: 0 auto;
     width: 980px;
 }
+    ul#tabs {
+        position: absolute;
+        right: 10px;
+        top: 144px;
+    }
+        ul#tabs li {
+            margin-right: 5px;
+            box-shadow: 0px 0px 5px #86774c;
+            -moz-box-shadow: 0px 0px 5px #86774c;
+            -webkit-box-shadow: 0px 0px 5px #86774c;
+        }
+            ul#tabs li a {
+                color: #a59464;
+            }
+        ul#tabs li.ui-state-active {
+            background: #a59464 none;
+            border-color: #907f4f;
+        }
+            ul#tabs li.ui-state-active a {
+                color: #fff;
+            }
+        ul#tabs li.ui-state-hover {
+            background: #a59464 none;
+            border-color: #907f4f;
+        }
+            ul#tabs li.ui-state-hover a {
+                color: #fff;
+            }
+          
     div#content {
-        box-shadow: 0px 0px 15px #597487;
-        -moz-box-shadow: 0px 0px 15px #597487;
-        -webkit-box-shadow: 0px 0px 15px #597487;
+        position: relative;
+        top: 178px;
+        box-shadow: 0px 0px 15px #86774c;
+        -moz-box-shadow: 0px 0px 15px #86774c;
+        -webkit-box-shadow: 0px 0px 15px #86774c;
     }
     div#content div#tabs_1.ui-tabs-panel {
         padding-left: 5px;
@@ -30,14 +70,11 @@ div#container {
         padding: 10px;
         width: 960px;
     }
-        textarea#css {
+        textarea#css,
+        textarea#html {
             height: 400px;
             font-family: Consolas, Courier New, Monaco, monospace;
             font-size: 12px;
-            width: 600px;
-        }
-        textarea#html {
-            height: 400px;
             width: 600px;
         }
     div#elements_container {
@@ -81,18 +118,93 @@ div#container {
             right: 0;
         }
     div#options {
-        padding: 10px;
+        left: 430px;
+        position: absolute;
+        top: 13px;
     }
-        div#options label {
-            display: block;
+        div#options h2 {
+            background: transparent url(../images/options.png) no-repeat 0 0;
+            color: #907f4f;
+            font-size: 32px;
+            font-weight: bold;
+            height: 112px;
+            left: 10px;
+            position: relative;
+            top: 8px;
+            text-indent: -10000px;
+            width: 249px;
         }
+        div#options p {
+            color: #907f4f;
+            position: absolute;
+            width: 140px;
+        }
+            div#options p.column_selector {
+                left: 295px;
+                top: 3px;
+            }
+            div#options p.container_width {
+                left: 430px;
+                top: 3px;
+            }
+            div#options p.column_width {
+                left: 570px;
+                top: 3px;
+            }
+            div#options p.margin_width {
+                top: 66px;
+                left: 430px;
+            }
+            div#options p.container_padding {
+                top: 66px;
+                left: 570px;
+            }
+            div#options label {
+                display: block;
+                font-size: 14px;
+                font-weight: bold;
+            }
+            div#options input {
+                border: dashed 1px #a59464;
+                color: #666;
+                font-size: 16px;
+                font-weight: bold;
+                margin: 4px 2px 0 0;
+                padding: 4px 5px 4px 0;
+                text-align: right;
+                width: 45px;
+            }
+            div#options select {
+                border: dashed 1px #a59464;
+                color: #666;
+                font-size: 16px;
+                font-weight: bold;
+                padding: 3px 5px 3px 0;
+                margin: 4px 2px 0 0;
+            }
+            div#options a {
+                background-color: #fff;
+                border: 1px solid #907f4f;
+                color: #a59464;
+                display: inline-block;
+                font-size: 11px;
+                font-weight: bold;
+                margin-left: 5px;
+                padding: 6px;
+                text-decoration: none;
+            }
+                div#options a:hover {
+                    background-color: #a59464;
+                    border: 1px solid #907f4f;
+                    color: #fff;
+                }
     div#elements {
         padding-top: 20px;
     }
         div#elements ul {
         }
             div#elements ul li {
-                border: solid 1px #777;
+                border: solid 1px #555;
                 color: #000;
                 cursor: pointer;
                 height: 40px;
@@ -104,6 +216,9 @@ div#container {
                 -webkit-border-radius: 4px;
                 border-radius: 4px;
             }
+                li#hor {
+                    background-color: #f6f6f6;
+                }
                 li.col_1,
                 li.col_5,
                 li.col_9,
@@ -133,7 +248,7 @@ div#container {
                 }
                 div#elements ul li div {
                     background-color: #fff;
-                    border: solid 1px #666;
+                    border: solid 1px #555;
                     height: 20px;
                     width: 160px;
                 }
@@ -157,7 +272,17 @@ div#container {
         }
 div.ui-dialog {
     overflow: visible;
-    box-shadow: 0px 0px 10px #666;
-    -moz-box-shadow: 0px 0px 10px #666;
-    -webkit-box-shadow: 0px 0px 10px #666;
+    box-shadow: 0px 0px 10px #86774c;
+    -moz-box-shadow: 0px 0px 10px #86774c;
+    -webkit-box-shadow: 0px 0px 10px #86774c;
+}
+div.ui-sortable-placeholder {
+    border: dashed 1px #999;
+}
+div.ui-dialog-titlebar {
+    background: #a59464 none;
+    border-color: #907f4f;
+}
+span.ui-dialog-title {
+    color: #fff;
 }
