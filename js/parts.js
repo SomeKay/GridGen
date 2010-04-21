@@ -36,6 +36,7 @@ function enableDialogs() {
         autoOpen: false,
         modal: true
     });
+    // proba
 }
 
 /**
