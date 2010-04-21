@@ -21,6 +21,7 @@ h1 {
 }
 div#container {
     margin: 0 auto;
+    position: relative;
     width: 980px;
 }
     ul#tabs {
@@ -118,7 +119,7 @@ div#container {
             right: 0;
         }
     div#options {
-        left: 430px;
+        left: 292px;
         position: absolute;
         top: 13px;
     }
@@ -285,4 +286,11 @@ div.ui-dialog-titlebar {
 }
 span.ui-dialog-title {
     color: #fff;
+}
+div.ui-widget-content span.ui-icon {
+    background-image: url(../css/custom-theme/images/ui-icons_ffffff_256x240.png);
+}
+div.ui-widget-content a.ui-state-hover {
+    background: #706033 none;
+    border-color: #5e4f24;
 }

@@ -40,42 +40,43 @@
                     <div id="preview"></div>
                 </div>
             </div>
+            <div id="elements" title="Elementi">
+                <ul></ul> <!-- Elementi -->
+            </div>
+            <div id="options" title="Postavke">
+                <h2>Postavke</h2>
+                <p class="column_selector">
+                    <label for="column_selector">Broj stupaca</label>
+                    <select name="column_selector" id="column_selector">
+                        <option value="4">četiri</option>
+                        <option value="8">osam</option>
+                        <option value="12">dvanaest</option>
+                        <option value="16">šesnaest</option>
+                    </select>
+                </p>
+                <p class="container_width">
+                    <label for="container_width">Širina prostora</label>
+                    <input name="container_width" id="container_width" value="960" />px
+                    <a href="#" class="container_width" title="Spremi">OK</a>
+                </p>
+                <p class="column_width">
+                    <label for="column_width">Širina stupca</label>
+                    <input name="column_width" id="column_width" value="220" />px
+                    <a href="#" class="column_width" title="Spremi">OK</a>
+                </p>
+                <p class="container_padding">
+                    <label for="container_padding">Odmak od ruba</label>
+                    <input name="container_padding" id="container_padding" value="10" />px
+                    <a href="#" class="container_padding" title="Spremi">OK</a>
+                </p>
+                <p class="margin_width">
+                    <label for="margin_width">Margina</label>
+                    <input name="margin_width" id="margin_width" value="20" />px
+                    <a href="#" class="margin_width" title="Spremi">OK</a>
+                </p>
+            </div><!-- options -->
         </div><!-- container -->
-        <div id="elements" title="Elementi">
-            <ul></ul> <!-- Elementi -->
-        </div>
-        <div id="options" title="Postavke">
-            <h2>Postavke</h2>
-            <p class="column_selector">
-                <label for="column_selector">Broj stupaca</label>
-                <select name="column_selector" id="column_selector">
-                    <option value="4">četiri</option>
-                    <option value="8">osam</option>
-                    <option value="12">dvanaest</option>
-                    <option value="16">šesnaest</option>
-                </select>
-            </p>
-            <p class="container_width">
-                <label for="container_width">Širina prostora</label>
-                <input name="container_width" id="container_width" value="960" />px
-                <a href="#" class="container_width" title="Spremi">OK</a>
-            </p>
-            <p class="column_width">
-                <label for="column_width">Širina stupca</label>
-                <input name="column_width" id="column_width" value="220" />px
-                <a href="#" class="column_width" title="Spremi">OK</a>
-            </p>
-            <p class="container_padding">
-                <label for="container_padding">Odmak od ruba</label>
-                <input name="container_padding" id="container_padding" value="10" />px
-                <a href="#" class="container_padding" title="Spremi">OK</a>
-            </p>
-            <p class="margin_width">
-                <label for="margin_width">Margina</label>
-                <input name="margin_width" id="margin_width" value="20" />px
-                <a href="#" class="margin_width" title="Spremi">OK</a>
-            </p>
-        </div><!-- options -->
+       
         <div id="modal" title="Postavke elementa">
             <p>
                 <label for="element_columns">Broj stupaca</label>

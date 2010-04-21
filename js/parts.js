@@ -170,13 +170,14 @@ function enableModal() {
             // Ako ne postoje veæi elementi djeca, treba izmijeniti broj stupaca elementa
             if (allowed) {
                 $dblclicked.removeClass('col_' + columns).addClass('col_' + new_columns).attr('rel', new_columns);
+                columns = new_columns;
                 enableModal();
             }
         });
-        
+
         // Postavljanje klikova na element koji se ureðuje
         $('a#element_margin_right, a#element_margin_left, a#element_margin_top, a#element_margin_bottom').unbind();
-        $('a#element_margin_right, a#element_margin_left, a#element_margin_top, a#element_margin_bottom').click(function() {
+        $('a#element_margin_right, a#element_margin_left, a#element_margin_top, a#element_margin_bottom').click(function () {
             var $clicked = $(this);
             var margin_direction = $clicked.attr('id').split('_');
             margin_direction = margin_direction[1] + '_' + margin_direction[2];
