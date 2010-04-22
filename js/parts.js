@@ -172,6 +172,7 @@ function enableModal() {
                 $dblclicked.removeClass('col_' + columns).addClass('col_' + new_columns).attr('rel', new_columns);
                 columns = new_columns;
                 enableModal();
+                fixStyleSheet();
             }
         });
 
@@ -184,6 +185,7 @@ function enableModal() {
 
             $dblclicked.toggleClass(margin_direction);
             $clicked.toggleClass('active');
+            fixStyleSheet();
         });
 
         // Otvaranje dijaloga

@@ -45,6 +45,8 @@ function fixStyleSheet() {
     var new_css = generateCSS();
 
     $('style[title="params"]').text(new_css);
+
+    generateHTML();
 }
 
 /**
@@ -264,10 +266,13 @@ function generateCSS() {
 
 function generateHTML() {
     var generated_html = $('div#elements_container').html();
+
+    if (generated_html == '')
+        return false;
+
     var $html = $(generated_html).wrapAll('<div class="root"></div>').parent();
-    console.log($html.html());
     $html.find('a').remove();
-    $html.find('div').removeClass('ui-droppable ui-draggable ui-sortable');
+    $html.find('div').removeClass('ui-droppable ui-draggable ui-sortable').removeAttr('rel');
 
 
     
